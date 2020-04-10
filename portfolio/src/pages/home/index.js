@@ -1,14 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
+import Navbar from "../../components/navbar/navbar"
+import Button from "../../components/button/button"
 import "./style.css"
 
 const Home = () => {
     return (
-    <div className="container text-center text-light mt-5 pt-5">
-            <h1>Hello I'm <span className="name">Ethan Irvine</span></h1>
-            <h1>I am a Fullstack Web Developer</h1>
-            <button type="button" class="btn">View Portfolio</button>       
-    </div>
+        <div>
+            <Navbar />
+        <div className="container text-light mt-5 pt-5">
+            <div className="text-center mb-5">
+                <h1>Hello I'm <span className="name">Ethan Irvine</span></h1>
+                <h1>I'm a Fullstack Web Developer</h1>
+                <h2>who focuses on <span className="name">Mobile First Design</span></h2>
+            </div>
+            <div className="text-center">
+                <Button 
+                    name = "Portfolio"
+                    link = "/portfolio"
+                />  
+            </div>
+            
+        </div>
+        </div>
         
+
     )
 }
 

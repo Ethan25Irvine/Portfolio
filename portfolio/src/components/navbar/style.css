@@ -5,3 +5,6 @@
     color: #66FCF1;
 }
 
+.active {
+    color: #66FCF1 !important;
+}

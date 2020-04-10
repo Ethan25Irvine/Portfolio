@@ -1,8 +1,44 @@
-import React, { Component } from "react";
+import React from "react";
+import Navbar from "../../components/navbar/navbar";
+import Card from "../../components/cards/index";
+import Header from "../../components/header/header"
+import API from "../../utils/github";
+
+function Cards() {
+    return (
+        API.map(data => (
+            <Card
+                key={data.id}
+                name={data.name}
+                live={data.live}
+                source={data.source}
+                image={data.image}
+            />
+
+            // <h1 key={data.id}>{data.name}</h1>
+        ))
+    )
+}
+
+
 
 const Portfolio = () => {
     return (
-        <h1>Portfolio</h1>
+        <div>
+            <Navbar />
+
+            <div className="container">
+                <Header
+                    header="My Work"
+                />
+                <div className="row">
+                    <Cards />
+                </div>
+            </div>
+
+
+        </div>
+
     )
 }
 
