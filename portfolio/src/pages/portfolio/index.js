@@ -14,8 +14,6 @@ function Cards() {
                 source={data.source}
                 image={data.image}
             />
-
-            // <h1 key={data.id}>{data.name}</h1>
         ))
     )
 }

@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css"
 
 function Button(props) {
     return (
-        <Link to={props.link}>
+        <a target="_blank" href={props.link} rel="noopener noreferrer">
             <button type="button" className="btn">
                 {props.name}
             </button>
-        </Link>
+        </a>
     );
 }
 
