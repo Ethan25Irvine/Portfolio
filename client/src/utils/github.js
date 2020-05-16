@@ -1,4 +1,3 @@
-
 import planner from "./planner.png";
 import weather from "./weather.png";
 import burger from "./burger.png";
