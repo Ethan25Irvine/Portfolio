@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "homepage": "https://Ethan25Irvine.github.io/Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -34,6 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://Ethan25Irvine.github.io/Portfolio/"
+  }
 }
